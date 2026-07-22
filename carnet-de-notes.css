@@ -1,0 +1,23 @@
+.hero-poster {
+  width: min(100%, 340px);
+  margin: 0;
+  justify-self: end;
+  transform: rotate(1deg);
+  filter: drop-shadow(0 28px 34px rgba(0, 0, 0, .48));
+}
+
+.hero-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(232, 204, 159, .22);
+  background: #1b160f;
+}
+
+@media (max-width: 800px) {
+  .hero-poster {
+    justify-self: start;
+    width: min(76vw, 330px);
+    grid-row: 1;
+  }
+}
