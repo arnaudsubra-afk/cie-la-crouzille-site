@@ -3,15 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Carnet de voyage, recherche musicale en cours de la Compagnie La Crouzille.">
-  <title>Carnet de voyage — Recherche musicale en cours — La Crouzille</title>
+  <title>Carnet de voyage — Piano, électronique et improvisation</title>
+  <meta name="description" content="Carnet de voyage est une recherche musicale en cours autour du piano, de l’électronique, de l’improvisation et du déplacement, portée par La Crouzille.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://compagnielacrouzille.fr/carnet-de-voyage.html">
+  <link rel="icon" type="image/png" href="assets/logocielacrouzille.png">
+  <link rel="preload" as="image" href="assets/carnet-de-voyage.png" fetchpriority="high">
+  <meta name="theme-color" content="#090807">
+
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Compagnie La Crouzille">
+  <meta property="og:title" content="Carnet de voyage — Recherche musicale en cours">
+  <meta property="og:description" content="Piano, électronique et improvisation : une forme de cinéma sans écran construite en direct.">
+  <meta property="og:url" content="https://compagnielacrouzille.fr/carnet-de-voyage.html">
+  <meta property="og:image" content="https://compagnielacrouzille.fr/assets/carnet-de-voyage.png">
+  <meta property="og:image:alt" content="Affiche du projet musical Carnet de voyage">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carnet de voyage — Recherche musicale en cours">
+  <meta name="twitter:description" content="Piano, électronique, improvisation et déplacement dans une forme scénique en développement.">
+  <meta name="twitter:image" content="https://compagnielacrouzille.fr/assets/carnet-de-voyage.png">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="carnet-de-voyage.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://compagnielacrouzille.fr/carnet-de-voyage.html#creativework",
+    "name": "Carnet de voyage",
+    "url": "https://compagnielacrouzille.fr/carnet-de-voyage.html",
+    "description": "Recherche musicale autour du piano, des matières électroniques, de l’improvisation et du déplacement.",
+    "image": "https://compagnielacrouzille.fr/assets/carnet-de-voyage.png",
+    "inLanguage": "fr-FR",
+    "genre": ["Musique instrumentale", "Musique électronique", "Improvisation"],
+    "creator": {
+      "@type": "PerformingGroup",
+      "@id": "https://compagnielacrouzille.fr/#organization",
+      "name": "Compagnie La Crouzille",
+      "url": "https://compagnielacrouzille.fr/"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span class="brand-name">Cie La Crouzille</span></a>
-    <button class="menu-toggle" aria-expanded="false">Menu</button>
+    <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
     <nav class="main-nav">
       <ul>
         <li><a href="a-propos.html">À propos</a></li>
@@ -32,7 +70,7 @@
         <p class="lead">Recherche musicale en cours</p>
       </div>
       <figure class="hero-poster">
-        <img src="assets/carnet-de-voyage.png" alt="Affiche de Carnet de voyage, recherche musicale de la Compagnie La Crouzille">
+        <img src="assets/carnet-de-voyage.png" alt="Affiche de Carnet de voyage, recherche musicale de la Compagnie La Crouzille" fetchpriority="high" decoding="async">
       </figure>
     </section>
 
@@ -54,7 +92,7 @@
       <div class="audio-card">
         <h3>Fragment de recherche</h3>
         <p>Extrait de travail — piano, électronique et improvisation.</p>
-        <audio controls controlsList="nodownload" preload="metadata" oncontextmenu="return false;">
+        <audio controls controlslist="nodownload noplaybackrate" disableRemotePlayback preload="metadata" oncontextmenu="return false;">
           <source src="assets/audio/PIANO-MV-2.mp3" type="audio/mpeg">
           Votre navigateur ne permet pas la lecture audio.
         </audio>
