@@ -14,10 +14,61 @@
   background: #1b160f;
 }
 
+.audio-card {
+  grid-column: 1 / -1;
+}
+
+.audio-intro {
+  margin-bottom: 1.25rem !important;
+}
+
+.audio-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.audio-track {
+  padding: 1rem;
+  border: 1px solid rgba(224, 196, 151, .18);
+  background: rgba(0, 0, 0, .14);
+}
+
+.audio-track-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .7rem;
+}
+
+.audio-track-heading strong {
+  color: #f1e4ce;
+  font-family: var(--display);
+  font-weight: 400;
+}
+
+.audio-track-heading span {
+  color: var(--gold);
+  font: .68rem/1.2 var(--display);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.audio-track audio {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 800px) {
   .hero-poster {
     justify-self: start;
     width: min(76vw, 330px);
     grid-row: 1;
+  }
+
+  .audio-track-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .25rem;
   }
 }
