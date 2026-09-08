@@ -1,3 +1,5 @@
-const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.main-nav');if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));});}
+const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.main-nav');if(toggle&&nav){const closeMenu=()=>{nav.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');};toggle.addEventListener('click',()=>{const open=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));});nav.addEventListener('click',event=>{if(event.target.closest('a'))closeMenu();});document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeMenu();toggle.focus();}});}
 
 const emailButton=document.querySelector('.contact-email');if(emailButton){emailButton.addEventListener('click',()=>{const local='ellizuorcaleic'.split('').reverse().join('');const provider='liamg'.split('').reverse().join('');const domain='moc'.split('').reverse().join('');window.location.href=`mailto:${local}@${provider}.${domain}`;});}
+
+const audioPlayers=[...document.querySelectorAll('audio')];audioPlayers.forEach(player=>{player.addEventListener('play',()=>{audioPlayers.forEach(other=>{if(other!==player)other.pause();});});});
