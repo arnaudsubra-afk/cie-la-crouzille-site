@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Compagnie La Crouzille à La Réole — À propos</title>
-  <meta name="description" content="Découvrez la Compagnie La Crouzille, portée par Arnaud Subra à La Réole, et ses créations mêlant musique, théâtre, clown, écriture et audiovisuel.">
+  <title>La Crouzille — Compagnie artistique d’Arnaud Subra</title>
+  <meta name="description" content="Fondée par Arnaud Subra à La Réole en 2026, La Crouzille réunit musique, théâtre, clown et écriture. Découvrez son parcours et ses créations.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://compagnielacrouzille.fr/a-propos">
   <link rel="icon" type="image/png" href="assets/logocielacrouzille.png">
@@ -13,29 +13,73 @@
   <meta property="og:locale" content="fr_FR">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Compagnie La Crouzille">
-  <meta property="og:title" content="À propos — Compagnie La Crouzille">
-  <meta property="og:description" content="Une compagnie nouvelle portée par près de vingt ans d’expérience de la scène et de la création.">
+  <meta property="og:title" content="La Crouzille — Compagnie artistique d’Arnaud Subra">
+  <meta property="og:description" content="Fondée par Arnaud Subra à La Réole en 2026, La Crouzille réunit musique, théâtre, clown et écriture. Découvrez son parcours et ses créations.">
   <meta property="og:url" content="https://compagnielacrouzille.fr/a-propos">
   <meta property="og:image" content="https://compagnielacrouzille.fr/assets/indexpage.png">
   <meta property="og:image:alt" content="L’univers visuel de la Compagnie La Crouzille">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="À propos — Compagnie La Crouzille">
-  <meta name="twitter:description" content="Une compagnie nouvelle portée par près de vingt ans d’expérience de la scène et de la création.">
+  <meta name="twitter:title" content="La Crouzille — Compagnie artistique d’Arnaud Subra">
+  <meta name="twitter:description" content="Fondée par Arnaud Subra à La Réole en 2026, La Crouzille réunit musique, théâtre, clown et écriture. Découvrez son parcours et ses créations.">
   <meta name="twitter:image" content="https://compagnielacrouzille.fr/assets/indexpage.png">
 
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "@id": "https://compagnielacrouzille.fr/a-propos#webpage",
-    "url": "https://compagnielacrouzille.fr/a-propos",
-    "name": "À propos de la Compagnie La Crouzille",
-    "description": "Présentation de la Compagnie La Crouzille, de son parcours artistique et de ses créations.",
-    "inLanguage": "fr-FR",
-    "isPartOf": {"@id": "https://compagnielacrouzille.fr/#website"},
-    "about": {"@id": "https://compagnielacrouzille.fr/#organization"}
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://compagnielacrouzille.fr/a-propos#webpage",
+      "url": "https://compagnielacrouzille.fr/a-propos",
+      "name": "À propos de la Compagnie La Crouzille",
+      "description": "Présentation de la Compagnie La Crouzille, de son parcours artistique et de ses créations.",
+      "inLanguage": "fr-FR",
+      "isPartOf": {
+        "@id": "https://compagnielacrouzille.fr/#website"
+      },
+      "about": {
+        "@id": "https://compagnielacrouzille.fr/#organization"
+      }
+    },
+    {
+      "@type": "PerformingGroup",
+      "@id": "https://compagnielacrouzille.fr/#organization",
+      "name": "Compagnie La Crouzille",
+      "alternateName": "Cie La Crouzille",
+      "url": "https://compagnielacrouzille.fr/",
+      "logo": "https://compagnielacrouzille.fr/assets/logocielacrouzille.png",
+      "image": "https://compagnielacrouzille.fr/assets/indexpage.png",
+      "description": "Compagnie artistique portée par Arnaud Subra, consacrée à la musique, au théâtre, au clown et aux formes scéniques de proximité.",
+      "founder": {
+        "@id": "https://compagnielacrouzille.fr/arnaud-subra#person"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "33190",
+        "addressLocality": "La Réole",
+        "addressRegion": "Nouvelle-Aquitaine",
+        "addressCountry": "FR"
+      },
+      "areaServed": "France"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://compagnielacrouzille.fr/arnaud-subra#person",
+      "name": "Arnaud Subra",
+      "url": "https://compagnielacrouzille.fr/arnaud-subra",
+      "jobTitle": "Auteur-compositeur-interprète, pianiste et chanteur",
+      "description": "Arnaud Subra mêle musique, théâtre et écriture. Il porte la Compagnie La Crouzille à La Réole et le récital piano-voix Carnet de notes.",
+      "image": "https://compagnielacrouzille.fr/assets/arnaud-subra-intensite-visage.png",
+      "affiliation": {
+        "@id": "https://compagnielacrouzille.fr/#organization"
+      },
+      "sameAs": [
+        "https://arnaudsubra.bandcamp.com/"
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -58,7 +102,8 @@
     <section class="page-hero">
       <div>
         <p class="eyebrow">La compagnie</p>
-        <h1>Créations en mouvement</h1>
+        <h1>La Crouzille</h1>
+        <p>Créations en mouvement</p>
         <p class="lead">Créée à La Réole en juin 2026, La Crouzille est une structure nouvelle portée par près de vingt ans d’expérience de la scène et de la création.</p>
       </div>
       <div class="hero-logo" role="img" aria-label="Logo de la Compagnie La Crouzille"></div>
@@ -67,7 +112,7 @@
     <section class="content-section two-col">
       <div>
         <h2>Une compagnie nouvelle, une expérience déjà solide</h2>
-        <p>Depuis 2006, Arnaud Subra développe des projets mêlant musique, théâtre, chanson, écriture et audiovisuel, au sein de plusieurs compagnies puis à la direction de ses propres structures. La Crouzille réunit aujourd’hui cette expérience dans une même ligne artistique.</p>
+        <p>Depuis 2006, <a href="/arnaud-subra">Arnaud Subra</a> développe des projets mêlant musique, théâtre, chanson, écriture et audiovisuel, au sein de plusieurs compagnies puis à la direction de ses propres structures. La Crouzille réunit aujourd’hui cette expérience dans une même ligne artistique.</p>
         <p>La compagnie travaille autour de quatre lignes sensibles : la mémoire, le déplacement, la métamorphose et la relation.</p>
       </div>
       <ul class="meta-list">

@@ -1,0 +1,5 @@
+.artist-hero{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+.artist-portrait{margin:0;padding:.6rem;border:1px solid var(--line);background:rgba(208,171,113,.06)}
+.artist-portrait img{display:block;width:100%;height:auto}
+.artist-portrait figcaption{padding:.5rem .2rem 0;color:var(--muted);font-size:.85rem}
+@media(max-width:800px){.artist-hero{grid-template-columns:1fr}}

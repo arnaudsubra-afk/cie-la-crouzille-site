@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compagnie La Crouzille — Musique, théâtre et clown à La Réole</title>
-  <meta name="description" content="La Crouzille est une compagnie artistique basée à La Réole, portée par Arnaud Subra : musique, théâtre, clown et créations scéniques de proximité.">
+  <title>Compagnie La Crouzille — Arnaud Subra</title>
+  <meta name="description" content="Le site officiel d’Arnaud Subra et de la Compagnie La Crouzille à La Réole : musique, théâtre, écriture et récital piano-voix Carnet de notes.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://compagnielacrouzille.fr/">
   <link rel="icon" type="image/png" href="assets/logocielacrouzille.png">
@@ -14,14 +14,14 @@
   <meta property="og:locale" content="fr_FR">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Compagnie La Crouzille">
-  <meta property="og:title" content="Compagnie La Crouzille — Créations en mouvement">
-  <meta property="og:description" content="Musique, théâtre, clown et créations scéniques portées par Arnaud Subra à La Réole.">
+  <meta property="og:title" content="Compagnie La Crouzille — Arnaud Subra">
+  <meta property="og:description" content="Le site officiel d’Arnaud Subra et de la Compagnie La Crouzille à La Réole : musique, théâtre, écriture et récital piano-voix Carnet de notes.">
   <meta property="og:url" content="https://compagnielacrouzille.fr/">
   <meta property="og:image" content="https://compagnielacrouzille.fr/assets/indexpage.png">
   <meta property="og:image:alt" content="L’atelier imaginaire de la Compagnie La Crouzille et les affiches de ses créations">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Compagnie La Crouzille — Créations en mouvement">
-  <meta name="twitter:description" content="Musique, théâtre, clown et créations scéniques portées par Arnaud Subra à La Réole.">
+  <meta name="twitter:title" content="Compagnie La Crouzille — Arnaud Subra">
+  <meta name="twitter:description" content="Le site officiel d’Arnaud Subra et de la Compagnie La Crouzille à La Réole : musique, théâtre, écriture et récital piano-voix Carnet de notes.">
   <meta name="twitter:image" content="https://compagnielacrouzille.fr/assets/indexpage.png">
 
   <link rel="stylesheet" href="style.css">
@@ -29,43 +29,58 @@
     .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
   </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://compagnielacrouzille.fr/#website",
-        "url": "https://compagnielacrouzille.fr/",
-        "name": "Compagnie La Crouzille",
-        "description": "Compagnie artistique de musique, théâtre et clown basée à La Réole.",
-        "inLanguage": "fr-FR",
-        "publisher": {"@id": "https://compagnielacrouzille.fr/#organization"}
-      },
-      {
-        "@type": "PerformingGroup",
-        "@id": "https://compagnielacrouzille.fr/#organization",
-        "name": "Compagnie La Crouzille",
-        "alternateName": "Cie La Crouzille",
-        "url": "https://compagnielacrouzille.fr/",
-        "logo": "https://compagnielacrouzille.fr/assets/logocielacrouzille.png",
-        "image": "https://compagnielacrouzille.fr/assets/indexpage.png",
-        "description": "Compagnie artistique portée par Arnaud Subra, consacrée à la musique, au théâtre, au clown et aux formes scéniques de proximité.",
-        "foundingDate": "2026-06-08",
-        "founder": {
-          "@type": "Person",
-          "name": "Arnaud Subra"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "postalCode": "33190",
-          "addressLocality": "La Réole",
-          "addressRegion": "Nouvelle-Aquitaine",
-          "addressCountry": "FR"
-        },
-        "areaServed": "France"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://compagnielacrouzille.fr/#website",
+      "url": "https://compagnielacrouzille.fr/",
+      "name": "Compagnie La Crouzille",
+      "description": "Compagnie artistique de musique, théâtre et clown basée à La Réole.",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://compagnielacrouzille.fr/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "PerformingGroup",
+      "@id": "https://compagnielacrouzille.fr/#organization",
+      "name": "Compagnie La Crouzille",
+      "alternateName": "Cie La Crouzille",
+      "url": "https://compagnielacrouzille.fr/",
+      "logo": "https://compagnielacrouzille.fr/assets/logocielacrouzille.png",
+      "image": "https://compagnielacrouzille.fr/assets/indexpage.png",
+      "description": "Compagnie artistique portée par Arnaud Subra, consacrée à la musique, au théâtre, au clown et aux formes scéniques de proximité.",
+      "founder": {
+        "@id": "https://compagnielacrouzille.fr/arnaud-subra#person"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "33190",
+        "addressLocality": "La Réole",
+        "addressRegion": "Nouvelle-Aquitaine",
+        "addressCountry": "FR"
+      },
+      "areaServed": "France"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://compagnielacrouzille.fr/arnaud-subra#person",
+      "name": "Arnaud Subra",
+      "url": "https://compagnielacrouzille.fr/arnaud-subra",
+      "jobTitle": "Auteur-compositeur-interprète, pianiste et chanteur",
+      "description": "Arnaud Subra mêle musique, théâtre et écriture. Il porte la Compagnie La Crouzille à La Réole et le récital piano-voix Carnet de notes.",
+      "image": "https://compagnielacrouzille.fr/assets/arnaud-subra-intensite-visage.png",
+      "affiliation": {
+        "@id": "https://compagnielacrouzille.fr/#organization"
+      },
+      "sameAs": [
+        "https://arnaudsubra.bandcamp.com/"
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="home-body">
@@ -82,6 +97,7 @@
 
   <nav class="home-mobile-nav" aria-label="Navigation mobile">
     <a href="/a-propos">À propos</a>
+    <a href="/arnaud-subra">Arnaud Subra</a>
     <a href="/carnet-de-notes">Carnet de notes</a>
     <a href="/carnet-de-voyage">Carnet de voyage</a>
     <a href="/elle-sappelle-b">Elle s'appelle B</a>
@@ -93,7 +109,7 @@
   <footer class="home-legal">
     <span>© 2026 Compagnie La Crouzille · Tous droits réservés</span>
     <span>Association déclarée · SIREN 106 192 495 · SIRET 106 192 495 00013 · RNA W333008514 · APE 90.01Z · La Réole (33)</span>
-    <span><a href="/mentions-legales">Mentions légales</a></span>
+    <span><a href="/arnaud-subra">Arnaud Subra · L’artiste</a> · <a href="/mentions-legales">Mentions légales</a></span>
   </footer>
 </body>
 </html>
