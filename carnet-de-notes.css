@@ -14,6 +14,41 @@
   background: #1b160f;
 }
 
+.editorial-photo {
+  margin: 0;
+}
+
+.editorial-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.editorial-photo-primary {
+  width: min(100%, 1040px);
+  margin: clamp(2.25rem, 5vw, 4.5rem) auto 0;
+}
+
+.editorial-photo-overhead {
+  grid-column: 1 / -1;
+  width: min(86%, 900px);
+  margin: clamp(1.5rem, 4vw, 3.5rem) 0 0 auto;
+}
+
+.editorial-photo-reflection {
+  width: min(72%, 760px);
+  margin: clamp(1.5rem, 4vw, 3rem) 0 clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.editorial-photo-face {
+  grid-column: 1 / -1;
+  justify-self: end;
+  width: min(68%, 720px);
+  margin: clamp(1.5rem, 4vw, 3.5rem) 0;
+}
+
 .audio-card {
   grid-column: 1 / -1;
 }
@@ -64,6 +99,33 @@
     justify-self: start;
     width: min(76vw, 330px);
     grid-row: 1;
+  }
+
+  .editorial-photo-primary,
+  .editorial-photo-overhead,
+  .editorial-photo-reflection,
+  .editorial-photo-face {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .editorial-photo-primary {
+    margin-top: 2.25rem;
+  }
+
+  .editorial-photo-overhead {
+    margin-top: 1.75rem;
+  }
+
+  .editorial-photo-reflection {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .editorial-photo-face {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .audio-track-heading {
