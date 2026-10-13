@@ -24,7 +24,7 @@
   <meta name="twitter:image" content="https://compagnielacrouzille.fr/assets/carnet-de-notes.png">
 
   <link rel="stylesheet" href="style.css?v=dates-20260929">
-  <link rel="stylesheet" href="carnet-de-notes.css?v=video-20261013">
+  <link rel="stylesheet" href="carnet-de-notes.css?v=video2-20261013">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -117,7 +117,11 @@
       <div class="cards">
         <div class="card video-card">
           <div class="video-frame">
-            <iframe src="https://www.youtube-nocookie.com/embed/xFMLtj0l6vk?rel=0" title="Carnet de notes — session live (extraits), Arnaud Subra" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <button class="video-poster" type="button" data-video="xFMLtj0l6vk" aria-label="Lire la vidéo : Carnet de notes, session live (3 min)">
+              <picture><source type="image/webp" srcset="assets/web/carnet-session-live-poster.webp"><img src="assets/web/carnet-session-live-poster.jpg" width="720" height="1280" alt="Arnaud Subra au piano pendant la session live de Carnet de notes" decoding="async"></picture>
+              <span class="video-play" aria-hidden="true"></span>
+              <span class="video-duration">3 min</span>
+            </button>
           </div>
           <div class="video-text">
             <h3>Voir</h3>
@@ -216,6 +220,19 @@
       <span><a href="/mentions-legales">Mentions légales</a></span>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll('.video-poster').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + b.dataset.video + '?rel=0&autoplay=1&playsinline=1';
+        f.title = b.getAttribute('aria-label');
+        f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+        f.referrerPolicy = 'strict-origin-when-cross-origin';
+        f.allowFullscreen = true;
+        b.replaceWith(f);
+      });
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
